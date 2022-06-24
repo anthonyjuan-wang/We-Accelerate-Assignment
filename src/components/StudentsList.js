@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react';
 import StudentsListItem from './StudentsListItem';
 import AddStudent from './AddStudent';
 
-//The function which is used to display teachers' list
+//The function which is used to display students' list
 function StudentsList(){
     const [students, setStudents] = useState([]);
 
@@ -13,7 +13,7 @@ function StudentsList(){
         .then( (data) => setStudents(data));
     }, []);
         return(
-        //Add new teachers' info to the list
+        //Add new students' info to the list
         <>
         <h2>Students:</h2>
         {students.map( (student) => <StudentsListItem key={student.id} id={student.id} name={student.name} faculty={student.faculty}/>)}
