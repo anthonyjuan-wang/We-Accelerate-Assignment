@@ -1,5 +1,5 @@
 import {useState} from 'react';
-
+import './AddStudent.css';
 function AddTeacher(props){
 
 const [teacherName, setTeacherName] = useState('Name of Teacher');
@@ -15,7 +15,7 @@ const [teacherFaculty, setTeacherFaculty] = useState('Faculty of Teacher');
         <input        
         type="text" 
         value={teacherFaculty} onChange={(e) => setTeacherFaculty(e.target.value)}></input>
-        <button 
+        <button class = 'btn' 
         onClick={()=> props.handleAddTeacher(teacherName, teacherFaculty)}
         >Add teacher</button>
     </div>)

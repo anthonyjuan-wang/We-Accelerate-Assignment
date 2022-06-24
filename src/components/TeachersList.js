@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import TeachersListItem from './TeachersListItem';
 import AddTeacher from './AddTeacher';
-
+import './AddStudent.css';
 //The function which is used to display teachers' list
 function TeachersList(){
     const [teachers, setTeachers] = useState([]);
