@@ -15,7 +15,7 @@ function StudentsList(){
         return(
         //Add new teachers' info to the list
         <>
-        <h2>Teachers:</h2>
+        <h2>Students:</h2>
         {students.map( (student) => <StudentsListItem key={student.id} id={student.id} name={student.name} faculty={student.faculty}/>)}
         <AddStudent handleAddStudent={(studentName, studentFaculty)=>{
             const newTeacherList = [...students, {id: students.length+=1,
