@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TeachersList from './components/TeachersList';
 import StudentsList from './components/StudentsList'
+import MarkingsLists from './components/MarkingsLists';
 import ButtonMenu from './components/ButtonMenu';
 
 function App({ message }) {
@@ -12,6 +13,7 @@ function App({ message }) {
         <ButtonMenu />
         <TeachersList/>
         <StudentsList/>
+        <MarkingsLists/>
       </header>
     </div>
   );
