@@ -7,10 +7,9 @@ function ButtonMenu()
     return(
     <div>
         <ButtonGroup vertical>
-            <Button variant="secondary"
-            >Left</Button>
-        <Button variant="secondary">Middle</Button>
-        <Button variant="secondary">Right</Button>
+            <Button variant="secondary">Teachers List</Button>
+            <Button variant="secondary">Student List</Button>
+            <Button variant="secondary">Markings List</Button>
         </ButtonGroup>
     </div>
 )
