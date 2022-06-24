@@ -23,8 +23,6 @@ function MarkingsListItem({id, studentId, teacherId, grade, commentFromProf}){
             size="lg"
             >Markings ID: {id}</Button>{''}
             {details && <div>
-                <div>Student's ID: {studentId}</div>
-                <div>Teacher's ID: {teacherId}</div>
                 <div>Grade: {grade}</div>
                 <div>Comment From Teacher: {commentFromProf}</div>
                 </div>}
